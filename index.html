@@ -1,0 +1,261 @@
+<html><head>
+<title>molecoder.</title>
+<style type="text/css">
+
+
+body {
+
+
+ cursor: default;
+ line-height: 17px;
+ font-size: 11px;
+ font-family: arial;
+ color: #282828;
+ background: #fff;
+}
+
+a:active, a:link, a:visited {
+ text-decoration: none;
+ color: #000000;
+}
+
+a:hover {
+ text-decoration: underline;
+ color: #000000;
+background-color: #F0F0F0;
+}
+
+#hills {
+margin: auto;
+width: 250px;
+padding: 50px;
+margin: 140px 0px 0px 500px;
+ font-size: 16px;
+ color: #000;
+
+}
+
+#moles {
+ position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+
+}
+
+.navigation {
+ text-align: center;
+ font: 10px arial;
+text-transform: uppercase;
+ color: #AAAAAA;
+ padding-bottom: 3px;
+ margin-bottom: 2px;
+ border-bottom: 1px solid #F3F3F3;
+}
+
+.navi {
+ color: #959595;
+ cursor: pointer;
+}
+
+.navi:hover {
+ font-weight: bold;
+ color: #E5E5E5;
+}
+
+#caves {
+ padding: 90px 0px 15px 0px;
+ position: absolute;
+ top: 30px;
+ left: 200px;
+ width: 620px;
+font: 11px verdana;
+line-height: 16px;
+text-align: justify;
+letter-spacing: -0.5px;
+}
+
+.h1 {
+ display: inline;
+ padding: 1px 3px;
+ text-transform: none;
+ color: #000;
+ background: #ffff00;
+font: 16px georgia;
+}
+
+.h1:hover {
+ text-transform: none;
+ color: #000000;
+ background: #F0F0F0;
+font: 16px georgia;
+}
+
+.blogger-labels {
+ padding: 5px;
+ font: 8px Tahoma;
+ background: #F5F5F5;
+ margin-bottom: 0px;
+display: none;
+}
+
+.asText {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+
+</style>
+
+<script>function changeNavigation(id) {document.getElementById('main').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<noembed><body></noembed>
+
+
+<div id="hills">
+<center>
+<font size="38px"><a href="http://molecoder.wordpress.com"><h1>molecoder.</h1></a></font></center>
+<br>
+<center>
+<hr color="f0f0f0" size="1px">
+</center>
+<br> 
+
+</div>
+
+
+
+
+
+<! --VERTICAL BUTTON LIST -->
+
+<script>var toggle = false;
+$('#hiddenText').hide();
+$('#doSmth').click(function() {
+    if(toggle===false) {
+        $('#hiddenText').show();
+        toggle = true;
+    }
+    else {
+        $('#hiddenText').hide();
+        toggle = false;
+    }
+});</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: none;
+  background-color: #fff;
+  width: 100px;
+  height: auto;
+
+margin: -50px 60px 150px 550px;
+padding: 10px;
+ font-size: 16px;
+ color: #000;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #fff;
+  color: #eb6b34;
+font-family: "Arial";
+font-weight: bold;
+  padding: 7px 5px;
+  width: 80%;
+  border: none;
+  outline: none;
+  text-align: left;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #fff;
+color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: none;
+  border-left: none;
+  height: 300px;
+
+margin: -50px 0px 0px 0px;
+width: 300px;
+padding: 0px;
+ font-size: 12px;
+ color: #000;
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Aspiring front-end developer with a knack for problem-solving and science.</p>
+</div>
+
+<div id="Portfolio" class="tabcontent">
+  <h3>Portfolio</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Find me on the internet.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<! --END VERTICAL BUTTON LIST -->
+
+
+
+</head>
+</html>
