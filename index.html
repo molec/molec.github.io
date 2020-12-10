@@ -1,12 +1,9 @@
-
 <html><head>
 <title>molecoder.</title>
 <style type="text/css">
 
 
 body {
-
-
  cursor: default;
  line-height: 17px;
  font-size: 11px;
@@ -26,7 +23,7 @@ a:hover {
 background-color: #F0F0F0;
 }
 
-#hills {
+#header {
 margin: auto;
 width: 250px;
 padding: 50px;
@@ -35,122 +32,6 @@ margin: 140px 0px 0px 500px;
  color: #000;
 
 }
-
-#moles {
- position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-
-}
-
-.navigation {
- text-align: center;
- font: 10px arial;
-text-transform: uppercase;
- color: #AAAAAA;
- padding-bottom: 3px;
- margin-bottom: 2px;
- border-bottom: 1px solid #F3F3F3;
-}
-
-.navi {
- color: #959595;
- cursor: pointer;
-}
-
-.navi:hover {
- font-weight: bold;
- color: #E5E5E5;
-}
-
-#caves {
- padding: 90px 0px 15px 0px;
- position: absolute;
- top: 30px;
- left: 200px;
- width: 620px;
-font: 11px verdana;
-line-height: 16px;
-text-align: justify;
-letter-spacing: -0.5px;
-}
-
-.h1 {
- display: inline;
- padding: 1px 3px;
- text-transform: none;
- color: #000;
- background: #ffff00;
-font: 16px georgia;
-}
-
-.h1:hover {
- text-transform: none;
- color: #000000;
- background: #F0F0F0;
-font: 16px georgia;
-}
-
-.blogger-labels {
- padding: 5px;
- font: 8px Tahoma;
- background: #F5F5F5;
- margin-bottom: 0px;
-display: none;
-}
-
-.asText {
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-}
-
-
-</style>
-
-<script>function changeNavigation(id) {document.getElementById('main').innerHTML=document.getElementById(id).innerHTML}</script>
-
-<noembed><body></noembed>
-
-
-<div id="hills">
-<center>
-<font size="38px"><a href="http://molec.github.io"><h1>molecoder.</h1></a></font></center>
-<br>
-<center>
-<hr color="f0f0f0" size="1px">
-</center>
-<br> 
-
-</div>
-
-
-
-
-
-<! --VERTICAL BUTTON LIST -->
-
-<script>var toggle = false;
-$('#hiddenText').hide();
-$('#doSmth').click(function() {
-    if(toggle===false) {
-        $('#hiddenText').show();
-        toggle = true;
-    }
-    else {
-        $('#hiddenText').hide();
-        toggle = false;
-    }
-});</script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
 
 /* Style the tab */
 .tab {
@@ -215,7 +96,7 @@ img{
   padding: 0px 0px 0px 0px;
   border: none;
   border-left: none;
-margin: -300px 0px 0px 350px;
+margin: -350px 0px 0px 350px;
  font-size: 12px;
  color: #000;
 width: 300px;
@@ -223,14 +104,48 @@ height: auto;
 }
 
 </style>
-</head>
+
+<script>function changeNavigation(id) {document.getElementById('main').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<noembed><body></noembed>
+
+
+<div id="header">
+<center>
+<font size="38px"><a href="http://molec.github.io"><h1>molecoder.</h1></a></font></center>
+<br>
+<center>
+<hr color="f0f0f0" size="1px">
+</center>
+<br> 
+
+</div>
+
+
+
+<script>var toggle = false;
+$('#hiddenText').hide();a
+$('#doSmth').click(function() {
+    if(toggle===false) {
+        $('#hiddenText').show();
+        toggle = true;
+    }
+    else {
+        $('#hiddenText').hide();
+        toggle = false;
+    }
+});</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <body>
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
-  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+  <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
 </div>
 
 <div id="About" class="tabcontent">
@@ -261,7 +176,7 @@ One of my goals is to combine a minimalistic style and simple workflow process t
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, TabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -271,7 +186,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(TabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
@@ -279,8 +194,6 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 
-
-<! --END VERTICAL BUTTON LIST -->
 
 
 
